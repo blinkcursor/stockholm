@@ -1,0 +1,262 @@
+/*-----------------------------------------------------------------------------------
+	Theme Name: Render Child
+	Template: render
+	Theme URI: http://themezilla.com/themes/render
+	Author: Nigel Anderson & Themezilla
+	Author URI: about.me/nigelanderson
+	Description: Custom version of Render theme for Stockholm Centre for Ethics...
+	Version: 1.0
+	License: GNU General Public License v2 or later
+	License URI: http://www.gnu.org/licenses/gpl-2.0.html
+	Text Domain: render-child
+----------------------------------------------------------------------------------- */
+
+/* ==========================================================================
+   MEDIA HELPER CLASS
+   ========================================================================== */
+.media {
+  display: block; }
+.media__img {
+  float: left;
+  margin-right: 24px; }
+  .media__img > img {
+    display: block; }
+.media__body {
+  overflow: hidden;
+  padding-bottom: 1em;
+  display: block; }
+  .media__body,
+  .media__body > :last-child {
+    margin-bottom: 0; }
+
+/* ==========================================================================
+   Clearfix helper class
+   ========================================================================== */
+.clearfix:after, .media:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/* ==========================================================================
+   Alignment helper classes
+   ========================================================================== */
+.alignright {
+	text-align: right;
+}
+
+/* ==========================================================================
+   Grid classes
+   ========================================================================== */
+.col1of3, .col2of3 {
+	width: 100%;
+	float: none;
+}
+@media (min-width: 960px) {
+	.col1of3 {
+		width: 33.33%;
+		float: left;
+	}
+	.col2of3 {
+		width: 66.66%;
+		float: left;
+	}
+}
+
+/* ==========================================================================
+   DYNAMIC PAGES THAT SHOULD BE FULL-WIDTH
+   ========================================================================== */
+body.author .content-area {
+	float: none;
+	width: auto;
+}
+
+/* ==========================================================================
+   PARENT STYLE OVERRIDES & AD-HOC STYLES
+   ========================================================================== */
+
+a, a:visited, a:hover, a:active {
+	text-decoration: none;
+	color: #1179e2;
+}
+
+/* LOGO size
+   ========================================================================== */
+
+.logo--extra {
+	height: 74px;
+	float: right;
+	padding: 0 5px;
+	display: none;
+}
+@media (min-width: 960px) {
+	.logo--extra {
+		display: block;
+	}
+}
+
+.site-branding .logo {
+	max-width: 80%;
+}
+.site-branding .logo img {
+	max-height: none;
+}
+@media (min-width: 960px) {
+	.site-branding .logo img {
+		max-width: none;
+	}
+}
+.fixed-header .logo img {
+	max-height: 68px;
+}
+.fixed-header .logo {
+	padding: 0 20px;
+}
+
+.author-heading, .author-position, .author-social {
+	margin-bottom: 1em;
+}
+
+.entry-category > a {
+	background-color: #f4f4f4;
+	padding: 3px 8px;
+	border-radius: 2px;
+	margin-right: 1em;
+}
+
+.title-description {
+	max-width: none;
+}
+
+.jetpack-image-container {
+	padding: 20px;
+}
+
+.date--fixed-width {
+	font-family: Monaco, "Fira Mono", Menlo, "Courier New", Courier, monospace;
+	font-size: 14px;
+	padding: 4px 8px 4px 0;
+
+}
+
+.main-navigation > div > ul > li > .sub-menu li a, .main-navigation > div > ul > li > .children li a {
+	color: #aaa;
+}
+
+p.event-archive, p.event-archive > a {
+	font-size: 18px;
+}
+p.event-archive {
+	margin-bottom: 8px;
+}
+
+.entry-body .content h1, .entry-body .content h2, .entry-body .content h3, .entry-body .content h4, .entry-body .content h5, .entry-body .content h6 {
+	margin-top: 0;
+}
+
+/* VCARD */
+
+.author-info p {
+	margin-bottom: 0.5em;
+	font-size: 14px;
+	line-height: 23px;
+	color: #555555; 
+}
+
+.author-info h2 {
+	margin: 0.8em 0;
+}
+
+h3.author-title > a {
+	font-weight: 700;
+	color: #333;
+}
+h4.author-position {
+	color: #666;
+}
+.author-social a:hover {
+	color: #3693f0;
+}
+.author-bio {
+	margin-bottom: 1em;
+}
+
+
+h1.section-title {
+	font-size: 28px;
+	line-height: 34px;
+	color: #666;
+	padding-left: 0.8em;
+	margin-bottom: 1em;
+}
+h1.entry-title {
+	font-size: 24px;
+	margin-bottom: 0.5em;
+}
+iframe {
+	margin-bottom: 2em;
+}
+
+/* ==========================================================================
+   associated researcher imgs on people page
+   ========================================================================== */
+#post-263 img {
+  margin-bottom: 0;
+  padding-top: 1em;
+}
+
+/* ==========================================================================
+   Footer layout
+   ========================================================================== */
+
+.footer--col {
+	padding: 20px 0;
+}
+
+@media (min-width: 960px) {
+	.footer--col {
+		padding: 5px;
+	}	
+}
+
+.footer--logo {
+	width: 50%;
+	float: left;
+}
+
+
+.footer--col img {
+	height: 74px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.footer--col > .media {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 480px;
+}
+
+.site-footer .site-info p {
+	font-size: 14px;
+}
+.site-footer .site-info {
+	text-align: left;
+}
+
+/* ==========================================================================
+   Sidebar events "widget"
+   ========================================================================== */
+
+.event-sidebar {
+	display: table-row;
+}
+.event-sidebar .event-date, .event-sidebar .event-title {
+	display: table-cell;
+	padding: 10px 0 10px 10px;
+}
+.event-sidebar .event-date {
+	width: 100px;
+}
+.sidebar-note {
+	padding: 10px;
+}
